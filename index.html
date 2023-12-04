@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>SyntKey Manager</title>
+</head>
+<body>
+    <div class="header-section">
+        <div class="logo">
+            <!-- <span class="logo"></span> -->
+            <h1 class="logo-label">SyntKey</h1>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="menu-container">
+            <button class="menu-item my-keys-item">Мои ключи</button>
+            <button class="menu-item sign-item">Подписать</button>
+            <button class="menu-item verify-sign-item">Проверить подпись</button>
+            <button class="menu-item encrypt-item">Зашифровать</button>
+            <button class="menu-item decrypt-item">Расшифровать</button>
+            <button class="menu-item settings-item">Настройки</button>
+        </div>
+
+        <div class="content-container">
+            <div class="my-keys-content">
+                <button class="add-my-keys-button">Добавить ключи</button>
+            </div>
+
+            <div class="sign-content">
+                <div class="setting-item path-to-gpg-setting-container">
+                    <label class="path-to-gpg-label">Выберите файл: </label>
+                    <button class="choose-path-button">...</button>
+                    <input type="text" class="path-to-gpg-input" disabled>
+                </div>
+
+                <div class="setting-item device-select-setting-container">
+                    <label for="key-storage-device" class="key-storage-device-label">Выберите ключ: </label>
+                    <select name="key-storage-device" id="key-storage-device" class="key-storage-device-select">
+                        <option value="0">_</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <button class="sign-button">Подписать</button>
+            </div>
+
+            <div class="verify-sign-content">
+                <div class="setting-item path-to-gpg-setting-container">
+                    <label class="path-to-gpg-label">Выберите файл: </label>
+                    <button class="choose-path-button">...</button>
+                    <input type="text" class="path-to-gpg-input" disabled>
+                </div>
+                
+                <div class="setting-item path-to-gpg-setting-container">
+                    <label class="path-to-gpg-label">Выберите ключ: </label>
+                    <button class="choose-path-button">...</button>
+                    <input type="text" class="path-to-gpg-input" disabled>
+                </div>
+                
+                <button class="sign-button">Подписать</button>
+            </div>
+
+            <div class="encrypt-content">
+                <div class="setting-item path-to-gpg-setting-container">
+                    <label class="path-to-gpg-label">Выберите файл: </label>
+                    <button class="choose-path-button">...</button>
+                    <input type="text" class="path-to-gpg-input" disabled>
+                </div>
+
+                <div class="setting-item device-select-setting-container">
+                    <label for="key-storage-device" class="key-storage-device-label">Выберите ключ: </label>
+                    <select name="key-storage-device" id="key-storage-device" class="key-storage-device-select">
+                        <option value="0">_</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                
+                <button class="sign-button">Зашифровать</button>
+            </div>
+
+            <div class="decrypt-content">
+                <div class="setting-item path-to-gpg-setting-container">
+                    <label class="path-to-gpg-label">Выберите файл: </label>
+                    <button class="choose-path-button">...</button>
+                    <input type="text" class="path-to-gpg-input" disabled>
+                </div>
+
+                <div class="setting-item device-select-setting-container">
+                    <label for="key-storage-device" class="key-storage-device-label">Выберите ключ: </label>
+                    <select name="key-storage-device" id="key-storage-device" class="key-storage-device-select">
+                        <option value="0">_</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <button class="sign-button">Расшифровать</button>
+            </div>
+
+            <div class="settings-content">
+                <div class="setting-item path-to-gpg-setting-container">
+                    <label class="path-to-gpg-label">Путь до ключей: </label>
+                    <button class="choose-path-button">...</button>
+                    <input type="text" class="path-to-gpg-input" disabled>
+                </div>
+
+                <div class="setting-item device-select-setting-container">
+                    <label for="key-storage-device" class="key-storage-device-label">Устройство хранения ключей: </label>
+                    <select name="key-storage-device" id="key-storage-device" class="key-storage-device-select">
+                        <option value="0">_</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <div class="setting-item startup-setting-container">
+                    <label for="startup-checkbox" class="startup-label">Запускать программу вместе с компьютером: </label>
+                    <input type="checkbox" class="startup-checkbox">
+                </div>
+
+                <button class="sign-button">Сохранить настройки</button>
+            </div>
+        </div>
+    </div>
+
+    <hr class="footer-delimiter">
+
+    <div class="footer-section">
+        <div class="support-container">
+            <a href="#" class="support-link">
+                <iconify-icon icon="ic:sharp-search"></iconify-icon>
+                <h5 class="support-label">Support</h5>
+            </a>
+        </div>
+
+        <div class="socials">
+            <a href="#" class="social-link telegram-link"><iconify-icon icon="simple-icons:telegram"></iconify-icon></a>
+            <a href="#" class="social-link twitter-link"><iconify-icon icon="formkit:twitter"></iconify-icon></a>
+            <a href="#" class="social-link github-link"><iconify-icon icon="bi:github"></iconify-icon></a>
+            <a href="#" class="social-link email-link"><iconify-icon icon="el:envelope-alt"></iconify-icon></a>
+        </div>
+    </div>
+    <script src="index.js">
+        // require('./index.js');
+    </script>
+</body>
+</html>

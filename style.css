@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    background-color: rgb(43, 45, 49);
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, p {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: grey;
+}
+
+.logo-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    width: 180px;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.content-section {
+    display: flex;
+    height: 84vh;
+}
+
+.menu-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    border-radius: 30px;
+    width: 180px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.menu-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.menu-item:hover {
+    background: linear-gradient(90deg, #54C674 0%, rgba(0, 224, 255, 0.65) 100%);
+}
+
+.selected-item {
+    background: linear-gradient(90deg, #54C674 0%, rgba(0, 224, 255, 0.65) 100%);
+}
+
+.footer-delimiter {
+    height: 0.1px;
+    border-color: grey;
+    margin: 0;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+}
+
+.support-link {
+    display: flex;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 7px;
+}
+
+
+
+.content-container {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.my-pub-keys {
+    margin-top: 35px;
+}
+
+.table-title {
+    margin-bottom: 10px;
+}
+
+td {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+}
+
+#key {
+    width: 160px;
+}
+
+#name {
+    width: 90px;
+}
+
+#expires {
+    width: 230px;
+}
+
+
+.path-to-gpg-label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+}
+
+.choose-path-button {
+    background-color: grey;
+    border: 0;
+    border-radius: 2px;
+}
+
+.path-to-gpg-input {
+    width: 250px;
+}
+
+.key-storage-device-label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+}
+
+.startup-label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+}
+
+.setting-item:not(:last-child) {
+    margin-bottom: 10px;
+}
